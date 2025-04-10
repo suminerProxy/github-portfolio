@@ -1,9 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
-  import { VitePWA } from 'vite-plugin-pwa'
+const { defineConfig } = require('vite')
+const react = require('@vitejs/plugin-react')
+const { VitePWA } = require('vite-plugin-pwa')
 
+module.exports = defineConfig({
   plugins: [react(), VitePWA({ registerType: 'autoUpdate' })],
-  base: '/your-repo-name/',
+  base: '/github-portfolio/', // ⚠️ 替换为你的仓库名
 })
