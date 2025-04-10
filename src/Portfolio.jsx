@@ -6,7 +6,7 @@ const username = typeof window !== 'undefined' ? (
     window.location.hostname === 'github.io'
         ? window.location.pathname.split('/')[1]
         : window.location.hostname.split('.')[0]
-) : 'yourname'
+) : 'suminerProxy'
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState(true)
 
