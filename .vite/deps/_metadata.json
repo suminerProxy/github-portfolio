@@ -1,0 +1,47 @@
+{
+  "hash": "fde7af96",
+  "browserHash": "b1450c62",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "deb83cb3",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "de2b10e3",
+      "needsInterop": true
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.esm.js",
+      "file": "react-icons_fa.js",
+      "fileHash": "79d6940e",
+      "needsInterop": false
+    },
+    "tsparticles-engine": {
+      "src": "../../node_modules/tsparticles-engine/esm/index.js",
+      "file": "tsparticles-engine.js",
+      "fileHash": "ef940084",
+      "needsInterop": false
+    },
+    "tsparticles-slim": {
+      "src": "../../node_modules/tsparticles-slim/esm/index.js",
+      "file": "tsparticles-slim.js",
+      "fileHash": "a87f9c8a",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-L2H5Y3CP": {
+      "file": "chunk-L2H5Y3CP.js"
+    },
+    "chunk-E32SBZ5E": {
+      "file": "chunk-E32SBZ5E.js"
+    },
+    "chunk-UXIASGQL": {
+      "file": "chunk-UXIASGQL.js"
+    }
+  }
+}
