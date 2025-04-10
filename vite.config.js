@@ -1,6 +1,3 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
 const { defineConfig } = require('vite')
 const react = require('@vitejs/plugin-react')
 const { VitePWA } = require('vite-plugin-pwa')
