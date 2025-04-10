@@ -2,7 +2,11 @@
 import { useState } from "react"
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa"
 import RepoList from "./RepoList"
-
+const username = typeof window !== 'undefined' ? (
+    window.location.hostname === 'github.io'
+        ? window.location.pathname.split('/')[1]
+        : window.location.hostname.split('.')[0]
+) : 'yourname'
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState(true)
 
@@ -31,12 +35,12 @@ export default function Portfolio() {
         <section className="mt-10">
           <h2 className="text-2xl font-semibold mb-4">📊 GitHub 活动</h2>
           <img
-            src={`https://github-readme-stats.vercel.app/api?username=yourname&show_icons=true&theme=${darkMode ? "tokyonight" : "default"}`}
+            src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=${darkMode ? "tokyonight" : "default"}`}
             alt="GitHub stats"
           />
         </section>
 
-        <RepoList username="yourname" />
+        <RepoList username={username} />
 
         <section className="mt-10">
           <h2 className="text-2xl font-semibold mb-4">📫 联系我</h2>
